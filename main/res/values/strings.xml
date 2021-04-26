@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Bliotek</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Bienvenue!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be more than 5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="connection_needed">Une connexion internet est nécessaire lors de la première utilisation de l\'application !</string>
+
+
+    <string name="no_connection_toast">Internet inaccessible</string>
+
+    <!-- MainActivity listView titles -->
+    <string name="main_list_option1">Ajouter un livre</string>
+    <string name="main_list_option2">Liste des livres</string>
+    <string name="main_list_option3">Ma sélection</string>
+    <string name="main_list_option4">Anciennes lectures</string>
+    <string name="main_list_option5">Livres prêtés</string>
+    <string name="main_list_option6">Mon compte</string>
+    <string name="main_list_option7">Déconnexion</string>
+
+    <!-- AddBook Activity strings -->
+    <string name="addbook_title">Enregistrer un livre</string>
+    <string name="addbook_camera_btn">Scanner un code barre</string>
+    <string name="addbook_search_isbn">Demander à Google</string>
+    <string name="addbook_isbn13_field">ISBN 13</string>
+    <string name="addbook_isbn10_field">ISBN 10</string>
+    <string name="addbook_title_field">Titre du livre</string>
+    <string name="addbook_author_field">Auteur(s)</string>
+    <string name="addbook_editor_field">Editeur</string>
+    <string name="addbook_pages_field">Nombre de pages</string>
+    <string name="addbook_description_field">Description</string>
+    <string name="addbook_published_field">Date de publication</string>
+    <string name="addbook_location">Emplacement actuel :</string>
+    <string name="addbook_country_field">Pays</string>
+    <string name="addbook_city_field">Ville</string>
+    <string name="addbook_floor_field">Etage</string>
+    <string name="addbook_room_field">Pièce</string>
+    <string name="addbook_location_description_field">Description de la localisation (meuble)</string>
+    <string name="addbook_btn_sendbook">Enregistrer le livre</string>
+    <string name="addbook_toast_isbn">Veuillez renseigner l\'isbn</string>
+    <string name="addbook_toast_title">Veuillez renseigner le titre</string>
+    <string name="addbook_toast_editor">Veuillez renseigner l\'éditeur</string>
+    <string name="addbook_toast_author">Veuillez renseigner l\'auteur</string>
+    <string name="addbook_toast_location">Veuillez renseigner une localisation</string>
+    <string name="addbook_toast_room">Veuillez renseigner une pièce</string>
+    <string name="addbook_toast_floor">Veuillez renseigner un étage</string>
+    <string name="addbook_toast_city">Veuillez renseigner une ville</string>
+    <string name="addbook_toast_country">Veuillez renseigner un pays</string>
+
+    <!-- Add Exemplary List -->
+    <string name="addexemplary_activity_layout_title">Ajouter un exemplaire</string>
+    <string name="addexemplary_list_title">Titre du livre</string>
+    <string name="addexemplary_list_author">Authors</string>
+    <string name="addexemplary_list_editor">Editor</string>
+    <string name="addexemplary_btn_different_book">Ce n\'est pas le même livre !</string>
+
+    <!-- BookList Activity strings -->
+    <string name="booklist_search_placeholder_title">Rechercher par titre</string>
+    <string name="booklist_search_placeholder_author">Rechercher par auteur</string>
+    <string name="booklist_search_placeholder_editor">Rechercher par editeur</string>
+
+    <!-- BookInfo strings -->
+    <string name="bookinfo_readby">Lu par :</string>
+    <string name="bookinfo_wantoread">Intéressé :</string>
+    <string name="bookinfo_haveread">Je l\'ai lu</string>
+    <string name="bookinfo_interested">Wishlist</string>
+    <string name="bookinfo_exemplaries_group_title">Exemplaires : </string>
+    <string name="bookinfo_exemplaries_group_hint">( Appuyez 2sec sur un exemplaire pour changer la localisation )</string>
+    <string name="bookinfo_average_rating">Note moyenne :</string>
+    <string name="bookinfo_your_rating">Votre note :</string>
+    <string name="bookinfo_rating">Note :</string>
+    <string name="bookinfo_sendcomment">Envoyer</string>
+    <string name="bookinfo_comment_placeholder">Laissez un commentaire !</string>
+    <string name="bookinfo_isbn10">ISBN10 :</string>
+    <string name="bookinfo_pages">Pages :</string>
+    <string name="bookinfo_isbn13">ISBN13 :</string>
+    <string name="bookinfo_modal_btn">Modifier la localisation</string>
+
+    <!-- Buttons -->
+    <string name="account_buttons">Changer</string>
+    <string name="account_sent">Envoyé</string>
+    <string name="btn_abort">Annuler</string>
+    <string name="try_again">Réessayer</string>
+</resources>

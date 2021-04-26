@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages_labels">
+        <item name="fr">Français</item>
+        <item name="de">Allemand</item>
+        <item name="en">Anglais</item>
+        <item name="es">Espagnol</item>
+        <item name="it">Italien</item>
+        <item name="cn">Chinois</item>
+        <item name="jp">Japonais</item>
+        <item name="ru">Russe</item>
+    </string-array>
+    <string-array name="languages_values">
+        <item name="fr">fr</item>
+        <item name="de">de</item>
+        <item name="en">en</item>
+        <item name="es">es</item>
+        <item name="it">it</item>
+        <item name="cn">cn</item>
+        <item name="jp">jp</item>
+        <item name="ru">ru</item>
+    </string-array>
+    <string-array name="researchBy">
+        <item>Par titre</item>
+        <item>Par auteur</item>
+        <item>Par éditeur</item>
+    </string-array>
+</resources>

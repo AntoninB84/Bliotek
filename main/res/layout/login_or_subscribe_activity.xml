@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36393A"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lyt_please_connect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageViewTest"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_marginVertical="50dp"
+            tools:srcCompat="@drawable/ic_panneau_d_avertissement" />
+
+        <TextView
+            android:id="@+id/tv_please_connect_message"
+            style="@style/Widget.AppCompat.TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="50dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:lineHeight="50sp"
+            android:text="@string/connection_needed"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_retry_connection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#4C4EBD"
+            android:padding="20dp"
+            android:text="@string/try_again"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#36393A"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/et_email_adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Example@domain.com"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:hint="@string/prompt_password"
+            android:textColorHint="@color/white"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Se connecter"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_login_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#FF0000" />
+
+        <Button
+            android:id="@+id/btn_display_subform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="S'inscrire"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt_subscribe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#36393A"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="gone"
+        >
+
+
+        <EditText
+            android:id="@+id/et_name_subscribe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Pseudonyme"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_email_adress_subscribe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Adresse mail"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_password_subscribe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:hint="@string/prompt_password"
+            android:textColorHint="@color/white"/>
+
+        <Button
+            android:id="@+id/btn_subscribe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="S'inscrire"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_subscribe_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#FF0000" />
+
+        <Button
+            android:id="@+id/btn_display_loginform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="Se connecter"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</LinearLayout>

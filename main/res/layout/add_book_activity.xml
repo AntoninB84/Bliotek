@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2C2C"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/addbook_title"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/btn_call_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:gravity=""
+                android:text="@string/addbook_camera_btn" />
+
+            <EditText
+                android:id="@+id/et_isbn13"
+                android:inputType="text"
+                android:hint="@string/addbook_isbn13_field"
+                android:autofillHints="@string/addbook_isbn13_field"
+                style="@style/addbook_et_field" />
+
+            <LinearLayout
+                android:id="@+id/linlyt_isbn10"
+                style="@style/addbook_linlyt_fields"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/et_isbn10"
+                    android:inputType="text"
+                    android:hint="@string/addbook_isbn10_field"
+                    android:autofillHints="@string/addbook_isbn10_field"
+                    style="@style/addbook_et_field" />
+            </LinearLayout>
+
+            <AutoCompleteTextView
+                android:id="@+id/acet_book_field"
+                android:hint="@string/addbook_title_field"
+                style="@style/addbook_et_field" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/macet_book_author"
+                android:hint="@string/addbook_author_field"
+                style="@style/addbook_et_field" />
+
+            <AutoCompleteTextView
+                android:id="@+id/acet_book_editor"
+                android:hint="@string/addbook_editor_field"
+                style="@style/addbook_et_field" />
+
+            <EditText
+                android:id="@+id/et_book_pages"
+                style="@style/addbook_et_field"
+                android:inputType="number"
+                android:hint="@string/addbook_pages_field"
+                android:autofillHints="@string/addbook_pages_field"
+                android:singleLine="true" />
+
+            <Spinner
+                android:id="@+id/et_book_language"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/et_book_description"
+                style="@style/addbook_et_field"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:hint="@string/addbook_description_field"
+                android:autofillHints="@string/addbook_description_field"/>
+
+            <EditText
+                android:id="@+id/et_book_published"
+                android:hint="@string/addbook_published_field"
+                android:autofillHints="@string/addbook_published_field"
+                style="@style/addbook_et_field"
+                android:inputType="datetime"
+                android:visibility="gone"/>
+
+            <TextView
+                style="@style/addbook_tv_field"
+                android:layout_marginTop="20dp"
+                android:text="@string/addbook_location"
+                android:textSize="20sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/et_book_location_description"
+                style="@style/addbook_et_field"
+                android:hint="@string/addbook_location_description_field"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/et_book_location_room"
+                android:hint="@string/addbook_room_field"
+                style="@style/addbook_et_field" />
+
+            <AutoCompleteTextView
+                android:id="@+id/et_book_location_floor"
+                android:hint="@string/addbook_floor_field"
+                style="@style/addbook_et_field" />
+
+            <AutoCompleteTextView
+                android:id="@+id/et_book_location_city"
+                android:hint="@string/addbook_city_field"
+                style="@style/addbook_et_field" />
+
+            <AutoCompleteTextView
+                android:id="@+id/et_book_location_country"
+                android:hint="@string/addbook_country_field"
+                style="@style/addbook_et_field" />
+
+            <Button
+                android:id="@+id/addBook_btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/addbook_btn_sendbook" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
